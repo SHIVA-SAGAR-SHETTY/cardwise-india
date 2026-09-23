@@ -102,11 +102,11 @@
     <!-- Step 1 -->
     <div class="step active" data-step="0">
       <h2>About you</h2>
-      <p class="sub">Banks check your income and credit history, so we only suggest cards you're likely to get.</p>
+      <p class="sub">We only need to know roughly how much you spend. No salary details needed.</p>
       <div class="grid">
         <div class="field">
-          <label for="income">Monthly income (take-home)</label>
-          <div class="money"><input type="number" id="income" name="income" min="0" step="1000" placeholder="60000" required></div>
+          <label for="expenditure">Total monthly spending <span class="hint">(roughly)</span></label>
+          <div class="money"><input type="number" id="expenditure" name="expenditure" min="0" step="1000" placeholder="40000" required></div>
         </div>
         <div class="field">
           <label for="employment">Employment</label>
@@ -135,9 +135,9 @@
     <!-- Step 2 -->
     <div class="step" data-step="1">
       <h2>Your monthly spending</h2>
-      <p class="sub">Rough numbers are fine. Leave 0 for things you don't spend on.</p>
+      <p class="sub">Optional, but it makes the match better. Anything you don't split out counts as general spending.</p>
       <div class="grid" id="spendGrid"></div>
-      <div class="total">Total monthly card spend: <b id="spendTotal">₹0</b></div>
+      <div class="total">Split out: <b id="spendTotal">₹0</b> of <b id="spendOf">₹0</b> · General spending: <b id="spendRest">₹0</b></div>
     </div>
 
     <!-- Step 3 -->
@@ -203,7 +203,15 @@ grid.innerHTML = SPEND.map(([k, l]) => `<div class="field"><label for="s_${k}">$
 document.getElementById("prioChips").innerHTML = PRIOS.map(([k, l]) => `<label class="chip"><input type="checkbox" name="prio" value="${k}">${l}</label>`).join("");
 
 const spendInputs = [...document.querySelectorAll("[data-spend]")];
-const updateTotal = () => document.getElementById("spendTotal").textContent = inr(spendInputs.reduce((a, i) => a + (Number(i.value) || 0), 0));
+const expInput = document.getElementById("expenditure");
+const splitSum = () => spendInputs.reduce((a, i) => a + (Number(i.value) || 0), 0);
+const updateTotal = () => {
+  const total = Number(expInput.value) || 0, split = splitSum();
+  document.getElementById("spendTotal").textContent = inr(split);
+  document.getElementById("spendOf").textContent = inr(Math.max(total, split));
+  document.getElementById("spendRest").textContent = inr(Math.max(total - split, 0));
+};
+expInput.addEventListener("input", updateTotal);
 spendInputs.forEach((i) => i.addEventListener("input", updateTotal));
 
 let step = 0;
@@ -221,8 +229,7 @@ function show(i) {
 }
 
 function validate() {
-  if (step === 0 && !(Number(document.getElementById("income").value) > 0)) return "Enter your monthly income.";
-  if (step === 1 && spendInputs.every((i) => !(Number(i.value) > 0))) return "Add at least one monthly spend.";
+  if (step === 0 && !(Number(expInput.value) > 0)) return "Enter roughly how much you spend each month.";
   return "";
 }
 
@@ -237,7 +244,7 @@ nextBtn.onclick = async () => {
 async function submit() {
   const spend = Object.fromEntries(spendInputs.map((i) => [i.dataset.spend, Number(i.value) || 0]));
   const payload = {
-    income: Number(document.getElementById("income").value),
+    expenditure: Math.max(Number(expInput.value) || 0, splitSum()),
     employment: document.getElementById("employment").value,
     credit_history: document.getElementById("credit_history").value,
     existing_banks: document.getElementById("existing_banks").value,
@@ -285,7 +292,7 @@ function render(d) {
         ${r.watch_out ? `<div class="watch"><b>Watch out:</b> ${esc(r.watch_out)}</div>` : ""}
         <details><summary>Card details</summary>
           <ul>${c.key_benefits.map((b) => `<li>${esc(b)}</li>`).join("")}</ul>
-          <p><b>Lounge:</b> ${esc(c.lounge)}<br><b>Forex markup:</b> ${c.forex_markup}%<br><b>Fee waiver:</b> ${c.fee_waiver_spend ? "Spend " + inr(c.fee_waiver_spend) + " in a year" : "Not available"}<br><b>Minimum income (approx.):</b> ${inr(c.min_income_monthly)}/month</p>
+          <p><b>Lounge:</b> ${esc(c.lounge)}<br><b>Forex markup:</b> ${c.forex_markup}%<br><b>Fee waiver:</b> ${c.fee_waiver_spend ? "Spend " + inr(c.fee_waiver_spend) + " in a year" : "Not available"}<br><b>Bank's usual income requirement:</b> ${c.min_income_monthly ? inr(c.min_income_monthly) + "/month" : "None"}</p>
           <ul>${c.drawbacks.map((b) => `<li>${esc(b)}</li>`).join("")}</ul>
         </details>
         <a class="apply" href="${esc(c.apply_url)}" target="_blank" rel="noopener nofollow">Apply on ${esc(c.bank)} website →</a>
