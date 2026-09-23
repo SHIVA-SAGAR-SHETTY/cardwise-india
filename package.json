@@ -1,0 +1,11 @@
+{
+  "name": "cardwise-india",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AI credit card recommender for India (RAG over 50 cards + GPT-6 Luna)",
+  "scripts": {
+    "dev": "node dev-server.js"
+  },
+  "engines": { "node": ">=20" }
+}

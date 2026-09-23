@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CardWise India: Find Your Best Credit Card</title>
+<meta name="description" content="Answer a few questions about how you spend, and our AI adviser picks the best credit card for you from 50 popular cards in India. Free, no sign-up.">
+<meta property="og:title" content="CardWise: Which credit card should you get?">
+<meta property="og:description" content="AI-matched credit card picks from 50 popular Indian cards, based on your monthly spending. Free, 2 minutes.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='2' y='7' width='28' height='18' rx='4' fill='%230f766e'/><rect x='2' y='11' width='28' height='4' fill='%23042f2e'/><rect x='6' y='19' width='8' height='2' rx='1' fill='%23ccfbf1'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f7f8f7; --surface: #ffffff; --surface-2: #f0f3f2; --text: #14201e; --muted: #5b6b68;
+    --border: #dde4e2; --accent: #0f766e; --accent-ink: #ffffff; --accent-soft: #e3f4f1;
+    --warn: #9a3412; --warn-soft: #fff1e6; --shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px rgba(15,40,35,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0d1413; --surface: #141d1c; --surface-2: #1b2625; --text: #e6efed; --muted: #95a7a3;
+      --border: #26332f; --accent: #2dd4bf; --accent-ink: #042f2e; --accent-soft: #13302c;
+      --warn: #fdba74; --warn-soft: #2c1d12; --shadow: none;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 Inter, system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 20px 0; display: flex; align-items: center; gap: 10px; font-weight: 700; }
+  header .logo { width: 30px; height: 20px; border-radius: 4px; background: var(--accent); position: relative; }
+  header .logo::after { content: ""; position: absolute; left: 0; right: 0; top: 5px; height: 4px; background: rgba(0,0,0,.35); }
+  .hero { padding: 28px 0 8px; }
+  h1 { font-size: clamp(28px, 5vw, 40px); line-height: 1.15; margin: 0 0 12px; letter-spacing: -0.02em; text-wrap: balance; }
+  .lede { color: var(--muted); font-size: 18px; margin: 0 0 24px; max-width: 58ch; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 24px; box-shadow: var(--shadow); }
+  .progress { display: flex; gap: 6px; margin-bottom: 20px; }
+  .progress span { flex: 1; height: 4px; border-radius: 4px; background: var(--border); }
+  .progress span.on { background: var(--accent); }
+  h2 { font-size: 20px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 20px; font-size: 14px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; }
+  label { display: block; font-size: 14px; font-weight: 500; margin-bottom: 6px; }
+  .hint { font-weight: 400; color: var(--muted); font-size: 12px; }
+  input[type=number], select, textarea { width: 100%; padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-2); color: var(--text); font: inherit; }
+  input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .money { position: relative; }
+  .money::before { content: "₹"; position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--muted); }
+  .money input { padding-left: 26px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { border: 1px solid var(--border); background: var(--surface-2); padding: 8px 14px; border-radius: 999px; cursor: pointer; font-size: 14px; user-select: none; }
+  .chip input { display: none; }
+  .chip:has(input:checked) { background: var(--accent-soft); border-color: var(--accent); color: var(--text); font-weight: 600; }
+  .total { margin-top: 16px; padding: 12px 14px; background: var(--surface-2); border-radius: 10px; font-size: 14px; color: var(--muted); }
+  .total b { color: var(--text); }
+  .actions { display: flex; justify-content: space-between; margin-top: 24px; gap: 12px; }
+  button { font: inherit; font-weight: 600; border-radius: 10px; padding: 12px 20px; cursor: pointer; border: 1px solid var(--border); background: var(--surface); color: var(--text); }
+  button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  button:disabled { opacity: .5; cursor: not-allowed; }
+  .step { display: none; } .step.active { display: block; }
+  .field { margin-bottom: 16px; }
+  .loading { text-align: center; padding: 40px 0; color: var(--muted); }
+  .spinner { width: 36px; height: 36px; border: 3px solid var(--border); border-top-color: var(--accent); border-radius: 50%; margin: 0 auto 14px; animation: spin 0.9s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .summary { background: var(--accent-soft); border-radius: 12px; padding: 16px; margin-bottom: 18px; }
+  .rec { border: 1px solid var(--border); border-radius: 14px; padding: 20px; margin-bottom: 14px; background: var(--surface); }
+  .rec.top { border: 2px solid var(--accent); }
+  .rec .badge { display: inline-block; font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: var(--accent); color: var(--accent-ink); margin-bottom: 8px; }
+  .rec h3 { margin: 0; font-size: 19px; }
+  .rec .bank { color: var(--muted); font-size: 14px; margin-bottom: 10px; }
+  .rec .headline { font-weight: 600; margin: 8px 0; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin: 14px 0; }
+  .stat { background: var(--surface-2); border-radius: 10px; padding: 10px 12px; }
+  .stat small { display: block; color: var(--muted); font-size: 12px; }
+  .stat b { font-variant-numeric: tabular-nums; }
+  .rec ul { padding-left: 18px; margin: 8px 0; font-size: 14px; }
+  .watch { background: var(--warn-soft); color: var(--warn); padding: 10px 12px; border-radius: 10px; font-size: 14px; margin: 10px 0; }
+  .apply { display: inline-block; margin-top: 8px; background: var(--accent); color: var(--accent-ink); text-decoration: none; font-weight: 600; padding: 11px 18px; border-radius: 10px; }
+  details { margin-top: 8px; font-size: 14px; } summary { cursor: pointer; color: var(--muted); }
+  .tips { margin-top: 18px; }
+  .how { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 32px 0; }
+  .how div { padding: 14px; border-radius: 12px; background: var(--surface); border: 1px solid var(--border); font-size: 14px; color: var(--muted); }
+  .how b { display: block; color: var(--text); margin-bottom: 4px; }
+  footer { color: var(--muted); font-size: 12px; padding: 24px 0 40px; }
+  .err { color: var(--warn); font-size: 14px; margin-top: 10px; }
+  @media (max-width: 480px) { .card { padding: 18px; } .actions button { flex: 1; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><span class="logo" aria-hidden="true"></span> CardWise India</header>
+
+  <section class="hero" id="hero">
+    <h1>Which credit card should you get?</h1>
+    <p class="lede">Tell us how you spend each month. Our AI adviser compares 50 popular Indian credit cards and picks the ones that pay you back the most, after fees.</p>
+  </section>
+
+  <form class="card" id="quiz" novalidate>
+    <div class="progress" aria-hidden="true"><span class="on"></span><span></span><span></span></div>
+
+    <!-- Step 1 -->
+    <div class="step active" data-step="0">
+      <h2>About you</h2>
+      <p class="sub">Banks check your income and credit history, so we only suggest cards you're likely to get.</p>
+      <div class="grid">
+        <div class="field">
+          <label for="income">Monthly income (take-home)</label>
+          <div class="money"><input type="number" id="income" name="income" min="0" step="1000" placeholder="60000" required></div>
+        </div>
+        <div class="field">
+          <label for="employment">Employment</label>
+          <select id="employment" name="employment">
+            <option value="salaried">Salaried</option>
+            <option value="self-employed">Self-employed / business</option>
+            <option value="student">Student</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="credit_history">Credit history</label>
+          <select id="credit_history" name="credit_history">
+            <option value="good">I have a credit card or loan and pay on time</option>
+            <option value="new">Limited history (under 1 year)</option>
+            <option value="none">No credit history</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="existing_banks">Banks you have an account with <span class="hint">(optional)</span></label>
+          <input type="text" id="existing_banks" name="existing_banks" placeholder="e.g. HDFC, SBI" style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-2);color:var(--text);font:inherit">
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step" data-step="1">
+      <h2>Your monthly spending</h2>
+      <p class="sub">Rough numbers are fine. Leave 0 for things you don't spend on.</p>
+      <div class="grid" id="spendGrid"></div>
+      <div class="total">Total monthly card spend: <b id="spendTotal">₹0</b></div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step" data-step="2">
+      <h2>What matters to you?</h2>
+      <p class="sub">Pick everything that applies.</p>
+      <div class="field">
+        <div class="chips" id="prioChips"></div>
+      </div>
+      <div class="field">
+        <label for="fee_comfort">How much annual fee are you comfortable paying?</label>
+        <select id="fee_comfort" name="fee_comfort">
+          <option value="free">Only lifetime-free cards</option>
+          <option value="low">Up to ₹1,000</option>
+          <option value="mid" selected>Up to ₹5,000 if the card's worth it</option>
+          <option value="high">Up to ₹15,000 for premium perks</option>
+          <option value="any">Any fee, just the best card</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="notes">Anything else? <span class="hint">(optional)</span></label>
+        <textarea id="notes" name="notes" rows="2" maxlength="400" placeholder="e.g. I fly IndiGo twice a month, I'm a Swiggy One member, I want a metal card"></textarea>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button type="button" id="back" disabled>Back</button>
+      <button type="button" class="primary" id="next">Next</button>
+    </div>
+    <div class="err" id="err" role="alert"></div>
+  </form>
+
+  <section id="results" hidden></section>
+
+  <section class="how">
+    <div><b>1. Your profile</b>How much you spend, where, and what perks you care about.</div>
+    <div><b>2. Card database</b>50 popular Indian cards with fees, rewards, caps and 2026 changes.</div>
+    <div><b>3. AI adviser</b>Works out what each card pays you back and explains its top 3 picks.</div>
+  </section>
+
+  <footer>
+    CardWise gives general information, not financial advice. Card terms change often, so always check the fees and terms on the bank's website before you apply. We don't store your answers. Card data last updated: <span id="updated">Sep 2026</span>.
+  </footer>
+</div>
+
+<script>
+const SPEND = [
+  ["amazon", "Amazon shopping"], ["flipkart", "Flipkart / Myntra"], ["food_delivery", "Swiggy / Zomato"],
+  ["online", "Other online shopping"], ["groceries", "Groceries (online + stores)"], ["dining", "Eating out"],
+  ["fuel", "Fuel"], ["travel", "Flights, hotels, trains"], ["utilities", "Bills (electricity, mobile, internet)"],
+  ["offline", "Other shopping in stores / UPI"], ["intl", "International spends (abroad / foreign sites)"],
+];
+const PRIOS = [
+  ["cashback", "Simple cashback"], ["travel", "Travel rewards"], ["lounge", "Airport lounges"],
+  ["fuel", "Fuel savings"], ["online-shopping", "Online shopping"], ["dining", "Dining out"],
+  ["international", "Low forex fees"], ["lifetime-free", "No annual fee"], ["upi", "Credit card on UPI"],
+];
+const inr = (n) => "₹" + Math.round(Number(n) || 0).toLocaleString("en-IN");
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+const grid = document.getElementById("spendGrid");
+grid.innerHTML = SPEND.map(([k, l]) => `<div class="field"><label for="s_${k}">${l}</label><div class="money"><input type="number" min="0" step="500" id="s_${k}" data-spend="${k}" value="0"></div></div>`).join("");
+document.getElementById("prioChips").innerHTML = PRIOS.map(([k, l]) => `<label class="chip"><input type="checkbox" name="prio" value="${k}">${l}</label>`).join("");
+
+const spendInputs = [...document.querySelectorAll("[data-spend]")];
+const updateTotal = () => document.getElementById("spendTotal").textContent = inr(spendInputs.reduce((a, i) => a + (Number(i.value) || 0), 0));
+spendInputs.forEach((i) => i.addEventListener("input", updateTotal));
+
+let step = 0;
+const steps = [...document.querySelectorAll(".step")];
+const bars = [...document.querySelectorAll(".progress span")];
+const nextBtn = document.getElementById("next"), backBtn = document.getElementById("back"), err = document.getElementById("err");
+
+function show(i) {
+  step = i;
+  steps.forEach((s, j) => s.classList.toggle("active", j === i));
+  bars.forEach((b, j) => b.classList.toggle("on", j <= i));
+  backBtn.disabled = i === 0;
+  nextBtn.textContent = i === steps.length - 1 ? "Find my card" : "Next";
+  err.textContent = "";
+}
+
+function validate() {
+  if (step === 0 && !(Number(document.getElementById("income").value) > 0)) return "Enter your monthly income.";
+  if (step === 1 && spendInputs.every((i) => !(Number(i.value) > 0))) return "Add at least one monthly spend.";
+  return "";
+}
+
+backBtn.onclick = () => show(step - 1);
+nextBtn.onclick = async () => {
+  const msg = validate();
+  if (msg) { err.textContent = msg; return; }
+  if (step < steps.length - 1) return show(step + 1);
+  await submit();
+};
+
+async function submit() {
+  const spend = Object.fromEntries(spendInputs.map((i) => [i.dataset.spend, Number(i.value) || 0]));
+  const payload = {
+    income: Number(document.getElementById("income").value),
+    employment: document.getElementById("employment").value,
+    credit_history: document.getElementById("credit_history").value,
+    existing_banks: document.getElementById("existing_banks").value,
+    fee_comfort: document.getElementById("fee_comfort").value,
+    priorities: [...document.querySelectorAll("input[name=prio]:checked")].map((c) => c.value),
+    notes: document.getElementById("notes").value,
+    spend,
+  };
+  const out = document.getElementById("results");
+  document.getElementById("quiz").hidden = true;
+  document.getElementById("hero").hidden = true;
+  out.hidden = false;
+  out.innerHTML = `<div class="card loading"><div class="spinner"></div>Comparing 50 cards against your spending…</div>`;
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  try {
+    const r = await fetch("/api/recommend", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) });
+    if (!r.ok) throw new Error();
+    render(await r.json());
+  } catch {
+    out.innerHTML = `<div class="card"><h2>Something went wrong</h2><p class="sub">Please try again in a moment.</p><button class="primary" onclick="restart()">Start over</button></div>`;
+  }
+}
+
+function render(d) {
+  const out = document.getElementById("results");
+  if (d.data_updated) document.getElementById("updated").textContent = d.data_updated;
+  const recs = d.recommendations || [];
+  out.innerHTML = `
+    <h1 style="margin-top:12px">Your best matches</h1>
+    <div class="summary">${esc(d.summary)}</div>
+    ${recs.map((r, i) => {
+      const c = r.card, e = r.estimate;
+      return `<article class="rec ${i === 0 ? "top" : ""}">
+        <span class="badge">${i === 0 ? "Best match" : "#" + (i + 1)}</span>
+        <h3>${esc(c.name)}</h3>
+        <div class="bank">${esc(c.bank)} · ${esc(c.network)}</div>
+        <div class="headline">${esc(r.headline)}</div>
+        <p>${esc(r.why)}</p>
+        <div class="stats">
+          <div class="stat"><small>Estimated rewards / yr</small><b>${inr(e.rewards_per_year)}</b></div>
+          <div class="stat"><small>Annual fee (you'd pay)</small><b>${inr(e.fee_after_waiver)}</b></div>
+          <div class="stat"><small>Joining fee</small><b>${c.joining_fee ? inr(c.joining_fee) : "Free"}</b></div>
+          <div class="stat"><small>Net value / yr</small><b>${inr(r.estimated_annual_value ?? e.net_value)}</b></div>
+        </div>
+        ${r.watch_out ? `<div class="watch"><b>Watch out:</b> ${esc(r.watch_out)}</div>` : ""}
+        <details><summary>Card details</summary>
+          <ul>${c.key_benefits.map((b) => `<li>${esc(b)}</li>`).join("")}</ul>
+          <p><b>Lounge:</b> ${esc(c.lounge)}<br><b>Forex markup:</b> ${c.forex_markup}%<br><b>Fee waiver:</b> ${c.fee_waiver_spend ? "Spend " + inr(c.fee_waiver_spend) + " in a year" : "Not available"}<br><b>Minimum income (approx.):</b> ${inr(c.min_income_monthly)}/month</p>
+          <ul>${c.drawbacks.map((b) => `<li>${esc(b)}</li>`).join("")}</ul>
+        </details>
+        <a class="apply" href="${esc(c.apply_url)}" target="_blank" rel="noopener nofollow">Apply on ${esc(c.bank)} website →</a>
+      </article>`;
+    }).join("")}
+    ${d.tips?.length ? `<div class="card tips"><h2>Tips</h2><ul>${d.tips.map((t) => `<li>${esc(t)}</li>`).join("")}</ul></div>` : ""}
+    <div class="actions"><button onclick="restart()">Start over</button><button class="primary" onclick="share()">Share CardWise</button></div>
+    <p class="sub" style="margin-top:12px">Picked by ${esc(d.source === "rule-based" ? "our rules engine" : "our AI adviser")}. These numbers are estimates. Check the latest terms on the bank's website before you apply.</p>`;
+}
+
+function restart() {
+  document.getElementById("results").hidden = true;
+  document.getElementById("quiz").hidden = false;
+  document.getElementById("hero").hidden = false;
+  show(0);
+}
+async function share() {
+  const data = { title: "CardWise India", text: "Find the credit card that fits your spending, free:", url: location.origin };
+  try { if (navigator.share) await navigator.share(data); else { await navigator.clipboard.writeText(data.url); alert("Link copied!"); } } catch {}
+}
+</script>
+</body>
+</html>

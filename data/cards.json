@@ -1,0 +1,1902 @@
+{
+  "meta": {
+    "last_updated": "2026-09-23",
+    "currency": "INR",
+    "notes": "Fees exclude 18% GST. 'rates' are ESTIMATED effective return in % (value per Rs 100 spent) at a realistic redemption value; 'base' applies to any category not listed. 'monthly_reward_cap' caps total monthly rewards in Rs where a hard cap exists. 'fee_waiver_spend' is annual spend (Rs) that waives the renewal fee (null = no waiver). 'lounge_value' is a rough annual Rs value of lounge/perks for someone who uses them. Terms change often - always verify on the bank's page before applying."
+  },
+  "cards": [
+    {
+      "id": "hdfc-infinia",
+      "name": "HDFC Bank Infinia Metal",
+      "bank": "HDFC Bank",
+      "network": "Visa / Mastercard",
+      "tier": "super-premium",
+      "joining_fee": 12500,
+      "annual_fee": 12500,
+      "fee_waiver_spend": 1000000,
+      "min_income_monthly": 300000,
+      "reward_type": "points",
+      "rates": {
+        "base": 3.3,
+        "travel": 10,
+        "fuel": 0,
+        "intl": 3.3
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 2,
+      "lounge": "Unlimited domestic + international (Priority Pass), incl. add-ons",
+      "lounge_value": 25000,
+      "key_benefits": [
+        "5 RP per Rs 150 (~3.3% when redeemed 1:1 for flights/hotels)",
+        "Up to 10X via HDFC SmartBuy (brand vouchers capped at 3,000 bonus RP/month since Jul 2026)",
+        "Unlimited golf and lounge access",
+        "Club Marriott membership"
+      ],
+      "drawbacks": [
+        "Largely invite-only",
+        "Retention needs Rs 18L/yr spend or Rs 50L relationship (from 2027)",
+        "Max 5 redemptions/month"
+      ],
+      "best_for": [
+        "travel",
+        "high-spender",
+        "lounge",
+        "premium"
+      ],
+      "apply_url": "https://www.hdfc.bank.in/credit-cards/infinia-credit-card"
+    },
+    {
+      "id": "hdfc-dcb",
+      "name": "HDFC Bank Diners Club Black Metal",
+      "bank": "HDFC Bank",
+      "network": "Diners Club",
+      "tier": "super-premium",
+      "joining_fee": 10000,
+      "annual_fee": 10000,
+      "fee_waiver_spend": 800000,
+      "min_income_monthly": 175000,
+      "reward_type": "points",
+      "rates": {
+        "base": 3.3,
+        "travel": 10,
+        "fuel": 0,
+        "intl": 3.3
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 2,
+      "lounge": "Unlimited domestic + international lounge access",
+      "lounge_value": 20000,
+      "key_benefits": [
+        "5 RP per Rs 150 (~3.3% on flights/hotels redemption)",
+        "Up to 10X on SmartBuy",
+        "Monthly milestone vouchers (Swiggy One, Cult, etc.) on Rs 80K spend",
+        "Annual memberships: Amazon Prime, Swiggy One, etc. on renewal"
+      ],
+      "drawbacks": [
+        "Diners acceptance is weaker in India/abroad - carry a backup Visa/Mastercard",
+        "Rent/wallet/gaming fees apply"
+      ],
+      "best_for": [
+        "travel",
+        "high-spender",
+        "lounge",
+        "premium"
+      ],
+      "apply_url": "https://www.hdfc.bank.in/credit-cards/diners-club-black-metal-edition-credit-card"
+    },
+    {
+      "id": "hdfc-regalia-gold",
+      "name": "HDFC Bank Regalia Gold",
+      "bank": "HDFC Bank",
+      "network": "Visa / Mastercard",
+      "tier": "premium",
+      "joining_fee": 2500,
+      "annual_fee": 2500,
+      "fee_waiver_spend": 400000,
+      "min_income_monthly": 100000,
+      "reward_type": "points",
+      "rates": {
+        "base": 1.25,
+        "online": 1.5,
+        "travel": 4,
+        "fuel": 0,
+        "intl": 1.25
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 2,
+      "lounge": "3 domestic visits/quarter on Rs 60K quarterly spend + Priority Pass international",
+      "lounge_value": 6000,
+      "key_benefits": [
+        "5 RP per Rs 200 (since May 2026)",
+        "5X on Nykaa, Myntra, Marks & Spencer, Reliance Digital",
+        "Boarding Edge travel perks (2/quarter)",
+        "Milestone flight vouchers on Rs 5L & Rs 7.5L spend"
+      ],
+      "drawbacks": [
+        "Domestic lounges now spend-gated",
+        "1.75% DCC fee on INR transactions abroad"
+      ],
+      "best_for": [
+        "travel",
+        "lounge",
+        "all-rounder"
+      ],
+      "apply_url": "https://www.hdfc.bank.in/credit-cards/regalia-gold-credit-card"
+    },
+    {
+      "id": "hdfc-millennia",
+      "name": "HDFC Bank Millennia",
+      "bank": "HDFC Bank",
+      "network": "Visa / Mastercard",
+      "tier": "entry",
+      "joining_fee": 1000,
+      "annual_fee": 1000,
+      "fee_waiver_spend": 100000,
+      "min_income_monthly": 35000,
+      "reward_type": "cashback",
+      "rates": {
+        "base": 1,
+        "amazon": 5,
+        "flipkart": 5,
+        "food_delivery": 5,
+        "online": 2,
+        "fuel": 0,
+        "utilities": 1
+      },
+      "monthly_reward_cap": 2000,
+      "forex_markup": 3.5,
+      "lounge": "Up to 4 domestic visits/year on Rs 1L quarterly spend",
+      "lounge_value": 1500,
+      "key_benefits": [
+        "5% CashPoints on Amazon, Flipkart, Myntra, Swiggy, Zomato, BookMyShow, Cult.fit, Uber and more",
+        "1% on other spends",
+        "Rs 1,000 voucher per Rs 1L quarterly spend"
+      ],
+      "drawbacks": [
+        "5% capped at Rs 1,000/month",
+        "CashPoints need statement redemption (min balance)"
+      ],
+      "best_for": [
+        "online-shopping",
+        "cashback",
+        "beginner",
+        "food-delivery"
+      ],
+      "apply_url": "https://www.hdfc.bank.in/credit-cards/millennia-credit-card"
+    },
+    {
+      "id": "hdfc-swiggy-blck",
+      "name": "Swiggy HDFC Bank BLCK",
+      "bank": "HDFC Bank",
+      "network": "Mastercard",
+      "tier": "entry",
+      "joining_fee": 1000,
+      "annual_fee": 1000,
+      "fee_waiver_spend": 200000,
+      "min_income_monthly": 25000,
+      "reward_type": "cashback",
+      "rates": {
+        "base": 1,
+        "food_delivery": 10,
+        "groceries": 4,
+        "online": 5,
+        "amazon": 5,
+        "flipkart": 5,
+        "travel": 5,
+        "fuel": 0,
+        "utilities": 0
+      },
+      "monthly_reward_cap": 3500,
+      "forex_markup": 3.5,
+      "lounge": "None",
+      "lounge_value": 0,
+      "key_benefits": [
+        "10% on Swiggy (Food, Instamart, Dineout) - cap Rs 1,500/month",
+        "5% on popular online categories - cap Rs 1,500/month",
+        "5% on Cleartrip (cap Rs 1,500)",
+        "1% elsewhere - cap Rs 500/month"
+      ],
+      "drawbacks": [
+        "Swiggy orders must be Rs 249+",
+        "No lounge access"
+      ],
+      "best_for": [
+        "food-delivery",
+        "online-shopping",
+        "cashback"
+      ],
+      "apply_url": "https://www.hdfc.bank.in/credit-cards/swiggy-blck-hdfc-bank-credit-card"
+    },
+    {
+      "id": "hdfc-tataneu-infinity",
+      "name": "Tata Neu Infinity HDFC Bank (RuPay)",
+      "bank": "HDFC Bank",
+      "network": "RuPay / Visa",
+      "tier": "mid",
+      "joining_fee": 1499,
+      "annual_fee": 1499,
+      "fee_waiver_spend": 300000,
+      "min_income_monthly": 100000,
+      "reward_type": "cashback",
+      "rates": {
+        "base": 1.5,
+        "groceries": 5,
+        "utilities": 5,
+        "online": 1.5,
+        "offline": 1.5,
+        "fuel": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 2,
+      "lounge": "8 domestic + 4 international per year (spend-gated)",
+      "lounge_value": 4000,
+      "key_benefits": [
+        "5% NeuCoins on Tata Neu & Tata brands (BigBasket, Croma, 1mg, Tata CLiQ, Taj, Air India via Neu)",
+        "1.5% on all other spends incl. RuPay UPI",
+        "5% on utility bills via Tata Neu"
+      ],
+      "drawbacks": [
+        "NeuCoins only useful inside Tata ecosystem",
+        "5% only when paid with this card (from May 2026)"
+      ],
+      "best_for": [
+        "groceries",
+        "utilities",
+        "upi",
+        "all-rounder"
+      ],
+      "apply_url": "https://www.hdfc.bank.in/credit-cards/tata-neu-infinity-hdfc-bank-credit-card"
+    },
+    {
+      "id": "hdfc-tataneu-plus",
+      "name": "Tata Neu Plus HDFC Bank (RuPay)",
+      "bank": "HDFC Bank",
+      "network": "RuPay / Visa",
+      "tier": "entry",
+      "joining_fee": 499,
+      "annual_fee": 499,
+      "fee_waiver_spend": 100000,
+      "min_income_monthly": 25000,
+      "reward_type": "cashback",
+      "rates": {
+        "base": 1,
+        "groceries": 2,
+        "utilities": 2,
+        "fuel": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "4 domestic visits/year (spend-gated)",
+      "lounge_value": 1500,
+      "key_benefits": [
+        "2% NeuCoins on Tata brands",
+        "1% on other spends incl. RuPay UPI",
+        "Low fee, easy approval"
+      ],
+      "drawbacks": [
+        "Low rewards outside Tata ecosystem"
+      ],
+      "best_for": [
+        "beginner",
+        "upi",
+        "groceries"
+      ],
+      "apply_url": "https://www.hdfc.bank.in/credit-cards/tata-neu-plus-hdfc-bank-credit-card"
+    },
+    {
+      "id": "hdfc-indianoil",
+      "name": "IndianOil HDFC Bank",
+      "bank": "HDFC Bank",
+      "network": "Visa / Mastercard",
+      "tier": "entry",
+      "joining_fee": 500,
+      "annual_fee": 500,
+      "fee_waiver_spend": 50000,
+      "min_income_monthly": 15000,
+      "reward_type": "fuel points",
+      "rates": {
+        "base": 0.65,
+        "fuel": 5,
+        "groceries": 5,
+        "utilities": 5
+      },
+      "monthly_reward_cap": 300,
+      "forex_markup": 3.5,
+      "lounge": "None",
+      "lounge_value": 0,
+      "key_benefits": [
+        "5% as Fuel Points at IndianOil outlets",
+        "5% on groceries and bill payments",
+        "1% fuel surcharge waiver",
+        "Redeem for free fuel"
+      ],
+      "drawbacks": [
+        "Low monthly caps on accelerated points",
+        "Weak outside fuel/groceries"
+      ],
+      "best_for": [
+        "fuel",
+        "beginner"
+      ],
+      "apply_url": "https://www.hdfc.bank.in/credit-cards/indianoil-hdfc-bank-credit-card"
+    },
+    {
+      "id": "hdfc-marriott",
+      "name": "Marriott Bonvoy HDFC Bank",
+      "bank": "HDFC Bank",
+      "network": "Diners Club",
+      "tier": "premium",
+      "joining_fee": 3000,
+      "annual_fee": 3000,
+      "fee_waiver_spend": null,
+      "min_income_monthly": 100000,
+      "reward_type": "hotel points",
+      "rates": {
+        "base": 0.7,
+        "travel": 2.8,
+        "dining": 1.4,
+        "fuel": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "12 domestic + 12 international per year, incl. add-ons",
+      "lounge_value": 8000,
+      "key_benefits": [
+        "Free Night Award (up to 15,000 points) on joining and every renewal",
+        "Marriott Bonvoy Silver Elite status",
+        "10 elite night credits",
+        "Milestone free nights"
+      ],
+      "drawbacks": [
+        "Poor everyday reward rate (cut in May 2026)",
+        "Diners acceptance",
+        "Value only if you stay at Marriott hotels"
+      ],
+      "best_for": [
+        "travel",
+        "hotels",
+        "lounge"
+      ],
+      "apply_url": "https://www.hdfc.bank.in/credit-cards/marriott-bonvoy-credit-card"
+    },
+    {
+      "id": "hdfc-moneyback-plus",
+      "name": "HDFC Bank MoneyBack+",
+      "bank": "HDFC Bank",
+      "network": "Visa / Mastercard",
+      "tier": "entry",
+      "joining_fee": 500,
+      "annual_fee": 500,
+      "fee_waiver_spend": 50000,
+      "min_income_monthly": 20000,
+      "reward_type": "cashpoints",
+      "rates": {
+        "base": 0.5,
+        "amazon": 2.5,
+        "flipkart": 2.5,
+        "food_delivery": 2.5,
+        "groceries": 2.5,
+        "fuel": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "None",
+      "lounge_value": 0,
+      "key_benefits": [
+        "10X CashPoints on Amazon, Flipkart, Swiggy, BigBasket, Reliance Smart SuperStore",
+        "Rs 500 voucher on Rs 50K quarterly spend",
+        "Easy approval"
+      ],
+      "drawbacks": [
+        "Accrual cut to per Rs 200 (May 2026)",
+        "Low base rate"
+      ],
+      "best_for": [
+        "beginner",
+        "online-shopping"
+      ],
+      "apply_url": "https://www.hdfc.bank.in/credit-cards/moneyback-plus-credit-card"
+    },
+    {
+      "id": "sbi-cashback",
+      "name": "Cashback SBI Card",
+      "bank": "SBI Card",
+      "network": "Visa",
+      "tier": "entry",
+      "joining_fee": 999,
+      "annual_fee": 999,
+      "fee_waiver_spend": 200000,
+      "min_income_monthly": 25000,
+      "reward_type": "cashback",
+      "rates": {
+        "base": 1,
+        "online": 5,
+        "amazon": 5,
+        "flipkart": 5,
+        "food_delivery": 5,
+        "travel": 5,
+        "fuel": 0,
+        "utilities": 0
+      },
+      "monthly_reward_cap": 4000,
+      "forex_markup": 3.5,
+      "lounge": "None",
+      "lounge_value": 0,
+      "key_benefits": [
+        "5% cashback on almost all online spends, no merchant restriction",
+        "1% offline",
+        "Cashback auto-credited to statement"
+      ],
+      "drawbacks": [
+        "Online 5% capped at Rs 2,000/cycle, offline at Rs 2,000 (from Apr 2026)",
+        "No rewards on rent, fuel, utilities, wallets, gaming"
+      ],
+      "best_for": [
+        "online-shopping",
+        "cashback",
+        "simple"
+      ],
+      "apply_url": "https://www.sbicard.com/en/personal/credit-cards/cashback-sbi-card.html"
+    },
+    {
+      "id": "sbi-simplyclick",
+      "name": "SimplyCLICK SBI Card",
+      "bank": "SBI Card",
+      "network": "Visa / Mastercard",
+      "tier": "entry",
+      "joining_fee": 499,
+      "annual_fee": 499,
+      "fee_waiver_spend": 100000,
+      "min_income_monthly": 20000,
+      "reward_type": "points",
+      "rates": {
+        "base": 0.25,
+        "online": 1.25,
+        "amazon": 1.25,
+        "flipkart": 2.5,
+        "food_delivery": 1.25,
+        "travel": 2.5,
+        "fuel": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "None",
+      "lounge_value": 0,
+      "key_benefits": [
+        "10X on partners (Myntra, BookMyShow, Cleartrip, Apollo 24|7, Domino's, Yatra, Netmeds)",
+        "5X on other online spends",
+        "Rs 500 Amazon voucher on joining",
+        "Rs 2,000 voucher at Rs 1L and Rs 2L milestones"
+      ],
+      "drawbacks": [
+        "Offline earn only 0.25%",
+        "Points worth Rs 0.25"
+      ],
+      "best_for": [
+        "beginner",
+        "online-shopping"
+      ],
+      "apply_url": "https://www.sbicard.com/en/personal/credit-cards/simplyclick-sbi-card.html"
+    },
+    {
+      "id": "sbi-simplysave",
+      "name": "SimplySAVE SBI Card",
+      "bank": "SBI Card",
+      "network": "Visa / Mastercard / RuPay",
+      "tier": "entry",
+      "joining_fee": 499,
+      "annual_fee": 499,
+      "fee_waiver_spend": 100000,
+      "min_income_monthly": 15000,
+      "reward_type": "points",
+      "rates": {
+        "base": 0.25,
+        "dining": 2.5,
+        "groceries": 2.5,
+        "fuel": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "None",
+      "lounge_value": 0,
+      "key_benefits": [
+        "10X on dining, movies, groceries & departmental stores",
+        "RuPay variant works on UPI",
+        "Easy approval"
+      ],
+      "drawbacks": [
+        "Low rewards elsewhere"
+      ],
+      "best_for": [
+        "beginner",
+        "groceries",
+        "dining",
+        "upi"
+      ],
+      "apply_url": "https://www.sbicard.com/en/personal/credit-cards/simplysave-sbi-card.html"
+    },
+    {
+      "id": "sbi-prime",
+      "name": "SBI Card PRIME",
+      "bank": "SBI Card",
+      "network": "Visa / Mastercard",
+      "tier": "mid",
+      "joining_fee": 2999,
+      "annual_fee": 2999,
+      "fee_waiver_spend": 300000,
+      "min_income_monthly": 50000,
+      "reward_type": "points",
+      "rates": {
+        "base": 0.5,
+        "dining": 2.5,
+        "groceries": 2.5,
+        "fuel": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "Domestic lounges via SBI programme + 4 international (Priority Pass)",
+      "lounge_value": 4000,
+      "key_benefits": [
+        "10 RP per Rs 100 on dining, groceries, departmental stores, movies",
+        "Rs 3,000 welcome voucher",
+        "Pizza Hut/Yatra vouchers on quarterly milestones",
+        "Rs 7,000 voucher on Rs 5L annual spend"
+      ],
+      "drawbacks": [
+        "Low base rate on other categories"
+      ],
+      "best_for": [
+        "groceries",
+        "dining",
+        "lounge"
+      ],
+      "apply_url": "https://www.sbicard.com/en/personal/credit-cards/sbi-card-prime.html"
+    },
+    {
+      "id": "sbi-elite",
+      "name": "SBI Card ELITE",
+      "bank": "SBI Card",
+      "network": "Visa / Mastercard",
+      "tier": "premium",
+      "joining_fee": 4999,
+      "annual_fee": 4999,
+      "fee_waiver_spend": 1000000,
+      "min_income_monthly": 60000,
+      "reward_type": "points",
+      "rates": {
+        "base": 0.5,
+        "dining": 2.5,
+        "groceries": 2.5,
+        "fuel": 0,
+        "intl": 0.5
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 1.99,
+      "lounge": "Domestic via SBI programme + 6 international (Priority Pass)",
+      "lounge_value": 6000,
+      "key_benefits": [
+        "Rs 5,000 welcome voucher",
+        "Free movie tickets worth Rs 6,000/year",
+        "Milestone bonus up to 50,000 points",
+        "Low 1.99% forex markup"
+      ],
+      "drawbacks": [
+        "High fee waiver threshold (Rs 10L)",
+        "Low base rewards"
+      ],
+      "best_for": [
+        "dining",
+        "groceries",
+        "movies",
+        "international"
+      ],
+      "apply_url": "https://www.sbicard.com/en/personal/credit-cards/sbi-card-elite.html"
+    },
+    {
+      "id": "sbi-bpcl-octane",
+      "name": "BPCL SBI Card OCTANE",
+      "bank": "SBI Card",
+      "network": "Visa",
+      "tier": "mid",
+      "joining_fee": 1499,
+      "annual_fee": 1499,
+      "fee_waiver_spend": 200000,
+      "min_income_monthly": 30000,
+      "reward_type": "points",
+      "rates": {
+        "base": 0.25,
+        "fuel": 7.25,
+        "dining": 2.5,
+        "groceries": 2.5
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "4 domestic visits/year",
+      "lounge_value": 2000,
+      "key_benefits": [
+        "25X points (~7.25% value incl. surcharge waiver) at BPCL pumps",
+        "10X on dining, movies, groceries, departmental stores",
+        "6,000 bonus points on joining"
+      ],
+      "drawbacks": [
+        "Only valuable at BPCL outlets",
+        "Monthly cap on fuel points"
+      ],
+      "best_for": [
+        "fuel",
+        "dining",
+        "groceries"
+      ],
+      "apply_url": "https://www.sbicard.com/en/personal/credit-cards/bpcl-sbi-card-octane.html"
+    },
+    {
+      "id": "sbi-irctc-platinum",
+      "name": "IRCTC SBI Card Platinum",
+      "bank": "SBI Card",
+      "network": "RuPay / Visa",
+      "tier": "entry",
+      "joining_fee": 500,
+      "annual_fee": 300,
+      "fee_waiver_spend": null,
+      "min_income_monthly": 15000,
+      "reward_type": "points",
+      "rates": {
+        "base": 0.33,
+        "travel": 5,
+        "fuel": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "4 railway lounge visits/year",
+      "lounge_value": 800,
+      "key_benefits": [
+        "Up to 10% value back on AC train tickets via IRCTC",
+        "1% IRCTC transaction fee waiver",
+        "Railway lounge access",
+        "Low annual fee"
+      ],
+      "drawbacks": [
+        "Only useful for frequent train travellers"
+      ],
+      "best_for": [
+        "train-travel",
+        "beginner"
+      ],
+      "apply_url": "https://www.sbicard.com/en/personal/credit-cards/irctc-sbi-platinum-card.html"
+    },
+    {
+      "id": "icici-amazonpay",
+      "name": "Amazon Pay ICICI Bank",
+      "bank": "ICICI Bank",
+      "network": "Visa",
+      "tier": "entry",
+      "joining_fee": 0,
+      "annual_fee": 0,
+      "fee_waiver_spend": null,
+      "min_income_monthly": 15000,
+      "reward_type": "cashback",
+      "rates": {
+        "base": 1,
+        "amazon": 5,
+        "utilities": 2,
+        "food_delivery": 2,
+        "travel": 2,
+        "fuel": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 1.99,
+      "lounge": "None",
+      "lounge_value": 0,
+      "key_benefits": [
+        "Lifetime free",
+        "5% on Amazon for Prime members (3% otherwise)",
+        "2% on Amazon Pay partner merchants and bill payments",
+        "1% on everything else, no cap"
+      ],
+      "drawbacks": [
+        "No lounge access",
+        "Cashback credited as Amazon Pay balance"
+      ],
+      "best_for": [
+        "amazon",
+        "lifetime-free",
+        "beginner",
+        "cashback"
+      ],
+      "apply_url": "https://www.icici.bank.in/personal-banking/cards/credit-card/amazon-pay-credit-card"
+    },
+    {
+      "id": "icici-coral",
+      "name": "ICICI Bank Coral",
+      "bank": "ICICI Bank",
+      "network": "Visa / Mastercard / RuPay",
+      "tier": "entry",
+      "joining_fee": 500,
+      "annual_fee": 500,
+      "fee_waiver_spend": 150000,
+      "min_income_monthly": 25000,
+      "reward_type": "points",
+      "rates": {
+        "base": 0.5,
+        "fuel": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "1 domestic visit/quarter on Rs 75K quarterly spend",
+      "lounge_value": 1000,
+      "key_benefits": [
+        "25% off movie tickets on BookMyShow/INOX",
+        "Min. 15% dining savings via Culinary Treats",
+        "RuPay variant works on UPI"
+      ],
+      "drawbacks": [
+        "Low reward rate",
+        "Rewards capped from Jan 2026"
+      ],
+      "best_for": [
+        "beginner",
+        "movies"
+      ],
+      "apply_url": "https://www.icici.bank.in/personal-banking/cards/credit-card/coral-credit-card"
+    },
+    {
+      "id": "icici-rubyx",
+      "name": "ICICI Bank Rubyx",
+      "bank": "ICICI Bank",
+      "network": "Mastercard + Amex",
+      "tier": "mid",
+      "joining_fee": 3000,
+      "annual_fee": 2000,
+      "fee_waiver_spend": 300000,
+      "min_income_monthly": 50000,
+      "reward_type": "points",
+      "rates": {
+        "base": 0.5,
+        "intl": 1,
+        "fuel": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "2 domestic visits/quarter (spend-gated)",
+      "lounge_value": 2000,
+      "key_benefits": [
+        "Welcome vouchers worth Rs 5,000+",
+        "Buy-one-get-one on BookMyShow",
+        "Dual card (Mastercard + Amex)"
+      ],
+      "drawbacks": [
+        "Low reward rate"
+      ],
+      "best_for": [
+        "movies",
+        "lounge"
+      ],
+      "apply_url": "https://www.icici.bank.in/personal-banking/cards/credit-card/rubyx-credit-card"
+    },
+    {
+      "id": "icici-sapphiro",
+      "name": "ICICI Bank Sapphiro",
+      "bank": "ICICI Bank",
+      "network": "Visa / Mastercard + Amex",
+      "tier": "premium",
+      "joining_fee": 6500,
+      "annual_fee": 3500,
+      "fee_waiver_spend": 600000,
+      "min_income_monthly": 80000,
+      "reward_type": "points",
+      "rates": {
+        "base": 0.5,
+        "intl": 1,
+        "fuel": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "4 domestic/quarter (spend-gated) + 2 international/year",
+      "lounge_value": 5000,
+      "key_benefits": [
+        "Welcome vouchers worth Rs 9,000+ (Tata CLiQ, EaseMyTrip, Uber)",
+        "BOGO movies",
+        "Golf rounds"
+      ],
+      "drawbacks": [
+        "Weak ongoing rewards",
+        "Rewards earned only on first Rs 20K/month in some categories"
+      ],
+      "best_for": [
+        "lounge",
+        "movies"
+      ],
+      "apply_url": "https://www.icici.bank.in/personal-banking/cards/credit-card/sapphiro-card"
+    },
+    {
+      "id": "icici-emeralde-private",
+      "name": "ICICI Bank Emeralde Private Metal",
+      "bank": "ICICI Bank",
+      "network": "Mastercard",
+      "tier": "super-premium",
+      "joining_fee": 12499,
+      "annual_fee": 12499,
+      "fee_waiver_spend": 1000000,
+      "min_income_monthly": 300000,
+      "reward_type": "points",
+      "rates": {
+        "base": 3,
+        "fuel": 0,
+        "utilities": 1,
+        "intl": 3
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 2,
+      "lounge": "Unlimited domestic + international, incl. add-ons",
+      "lounge_value": 20000,
+      "key_benefits": [
+        "6 RP per Rs 200 (~3% on regular spends)",
+        "Taj Epicure + EazyDiner Prime memberships",
+        "Unlimited golf",
+        "100% point redemption for travel"
+      ],
+      "drawbacks": [
+        "Caps on utility/insurance/grocery rewards",
+        "High fee"
+      ],
+      "best_for": [
+        "high-spender",
+        "travel",
+        "lounge",
+        "premium"
+      ],
+      "apply_url": "https://www.icici.bank.in/personal-banking/cards/credit-card/emeralde-private-metal-credit-card"
+    },
+    {
+      "id": "icici-hpcl-supersaver",
+      "name": "HPCL Super Saver ICICI Bank",
+      "bank": "ICICI Bank",
+      "network": "Visa / RuPay",
+      "tier": "entry",
+      "joining_fee": 500,
+      "annual_fee": 500,
+      "fee_waiver_spend": 150000,
+      "min_income_monthly": 20000,
+      "reward_type": "cashback",
+      "rates": {
+        "base": 0.5,
+        "fuel": 5,
+        "utilities": 5,
+        "groceries": 5
+      },
+      "monthly_reward_cap": 500,
+      "forex_markup": 3.5,
+      "lounge": "1 domestic visit/quarter (spend-gated)",
+      "lounge_value": 800,
+      "key_benefits": [
+        "4% cashback + 1% surcharge waiver at HPCL pumps",
+        "5% on utility bills and departmental/grocery stores",
+        "RuPay variant works on UPI"
+      ],
+      "drawbacks": [
+        "Monthly caps on accelerated cashback"
+      ],
+      "best_for": [
+        "fuel",
+        "utilities",
+        "groceries"
+      ],
+      "apply_url": "https://www.icici.bank.in/personal-banking/cards/credit-card/hpcl-super-saver"
+    },
+    {
+      "id": "axis-atlas",
+      "name": "Axis Bank Atlas",
+      "bank": "Axis Bank",
+      "network": "Visa",
+      "tier": "premium",
+      "joining_fee": 5000,
+      "annual_fee": 5000,
+      "fee_waiver_spend": null,
+      "min_income_monthly": 100000,
+      "reward_type": "miles",
+      "rates": {
+        "base": 2,
+        "travel": 5,
+        "fuel": 0,
+        "utilities": 0,
+        "intl": 2
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "8-18 domestic + 4-12 international per year by tier (physical card needed domestically)",
+      "lounge_value": 6000,
+      "key_benefits": [
+        "5 EDGE Miles per Rs 100 on travel (up to Rs 2L/month)",
+        "2 EDGE Miles per Rs 100 elsewhere",
+        "Milestone bonus miles at Rs 3L/7.5L/15L",
+        "Transfer to airline/hotel partners"
+      ],
+      "drawbacks": [
+        "Transfer partner caps tightened (Sep 2026: 30,000 mile cap for Group A)",
+        "No rewards on utilities, gift cards, tolls"
+      ],
+      "best_for": [
+        "travel",
+        "miles",
+        "lounge"
+      ],
+      "apply_url": "https://www.axis.bank.in/cards/credit-card/axis-bank-atlas-credit-card"
+    },
+    {
+      "id": "axis-magnus",
+      "name": "Axis Bank Magnus",
+      "bank": "Axis Bank",
+      "network": "Visa / Mastercard",
+      "tier": "super-premium",
+      "joining_fee": 12500,
+      "annual_fee": 12500,
+      "fee_waiver_spend": 2500000,
+      "min_income_monthly": 200000,
+      "reward_type": "points",
+      "rates": {
+        "base": 2.4,
+        "travel": 6,
+        "fuel": 0,
+        "utilities": 0,
+        "intl": 2.4
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 2,
+      "lounge": "Unlimited domestic (card swipe) + international via Priority Pass",
+      "lounge_value": 15000,
+      "key_benefits": [
+        "12 EDGE RP per Rs 200; 35 RP per Rs 200 above Rs 1.5L monthly spend",
+        "5X on Travel EDGE",
+        "Burgundy variant for priority banking customers",
+        "Welcome travel voucher"
+      ],
+      "drawbacks": [
+        "Only great if you spend Rs 1.5L+/month",
+        "Transfer ratio 5:2 with capped partners"
+      ],
+      "best_for": [
+        "high-spender",
+        "travel",
+        "lounge",
+        "premium"
+      ],
+      "apply_url": "https://www.axis.bank.in/cards/credit-card/axis-bank-magnus-credit-card"
+    },
+    {
+      "id": "axis-flipkart",
+      "name": "Flipkart Axis Bank",
+      "bank": "Axis Bank",
+      "network": "Visa / Mastercard",
+      "tier": "entry",
+      "joining_fee": 500,
+      "annual_fee": 500,
+      "fee_waiver_spend": 350000,
+      "min_income_monthly": 15000,
+      "reward_type": "cashback",
+      "rates": {
+        "base": 1,
+        "flipkart": 5.5,
+        "travel": 5,
+        "food_delivery": 4,
+        "fuel": 0,
+        "utilities": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "None (removed Jun 2025)",
+      "lounge_value": 0,
+      "key_benefits": [
+        "5% on Flipkart & Cleartrip, 7.5% on Myntra (each capped Rs 4,000/quarter)",
+        "4% on Swiggy, PVR, Uber, Cult.fit",
+        "1% unlimited elsewhere",
+        "Auto-credited cashback"
+      ],
+      "drawbacks": [
+        "No lounge access",
+        "No cashback on utilities, fuel, rent, gift cards"
+      ],
+      "best_for": [
+        "flipkart",
+        "online-shopping",
+        "cashback",
+        "beginner"
+      ],
+      "apply_url": "https://www.axis.bank.in/cards/credit-card/flipkart-axisbank-credit-card"
+    },
+    {
+      "id": "axis-airtel",
+      "name": "Airtel Axis Bank",
+      "bank": "Axis Bank",
+      "network": "Mastercard",
+      "tier": "entry",
+      "joining_fee": 500,
+      "annual_fee": 500,
+      "fee_waiver_spend": 200000,
+      "min_income_monthly": 20000,
+      "reward_type": "cashback",
+      "rates": {
+        "base": 1,
+        "utilities": 10,
+        "food_delivery": 10,
+        "groceries": 10,
+        "fuel": 0
+      },
+      "monthly_reward_cap": 1000,
+      "forex_markup": 3.5,
+      "lounge": "None (discontinued Apr 2026)",
+      "lounge_value": 0,
+      "key_benefits": [
+        "Up to 25% on Airtel bills and 10% on utilities via Airtel Thanks app",
+        "10% on Swiggy, Zomato, BigBasket",
+        "1% elsewhere"
+      ],
+      "drawbacks": [
+        "Caps on each accelerated category",
+        "Airtel-linked value only"
+      ],
+      "best_for": [
+        "utilities",
+        "food-delivery",
+        "groceries",
+        "cashback"
+      ],
+      "apply_url": "https://www.axis.bank.in/cards/credit-card/airtel-axis-bank-credit-card"
+    },
+    {
+      "id": "axis-indianoil",
+      "name": "IndianOil Axis Bank",
+      "bank": "Axis Bank",
+      "network": "RuPay / Mastercard",
+      "tier": "entry",
+      "joining_fee": 500,
+      "annual_fee": 500,
+      "fee_waiver_spend": 350000,
+      "min_income_monthly": 15000,
+      "reward_type": "points",
+      "rates": {
+        "base": 0.2,
+        "fuel": 5,
+        "online": 1
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "None",
+      "lounge_value": 0,
+      "key_benefits": [
+        "4% value back + 1% surcharge waiver at IndianOil pumps",
+        "1% on online shopping",
+        "RuPay variant works on UPI"
+      ],
+      "drawbacks": [
+        "Very low base rate"
+      ],
+      "best_for": [
+        "fuel",
+        "beginner"
+      ],
+      "apply_url": "https://www.axis.bank.in/cards/credit-card/indianoil-axis-bank-credit-card"
+    },
+    {
+      "id": "axis-myzone",
+      "name": "Axis Bank MY ZONE",
+      "bank": "Axis Bank",
+      "network": "Visa / RuPay",
+      "tier": "entry",
+      "joining_fee": 500,
+      "annual_fee": 500,
+      "fee_waiver_spend": null,
+      "min_income_monthly": 15000,
+      "reward_type": "points",
+      "rates": {
+        "base": 0.4,
+        "food_delivery": 2,
+        "fuel": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "None",
+      "lounge_value": 1500,
+      "key_benefits": [
+        "Complimentary SonyLIV Premium annual subscription",
+        "Rs 120 off on Swiggy (min order Rs 500, twice a month)",
+        "BOGO movie tickets via District (spend-gated from Nov 2026)"
+      ],
+      "drawbacks": [
+        "Low reward points"
+      ],
+      "best_for": [
+        "entertainment",
+        "beginner"
+      ],
+      "apply_url": "https://www.axis.bank.in/cards/credit-card/axis-bank-my-zone-credit-card"
+    },
+    {
+      "id": "axis-kiwi",
+      "name": "Kiwi Axis Bank (RuPay)",
+      "bank": "Axis Bank x Kiwi",
+      "network": "RuPay",
+      "tier": "entry",
+      "joining_fee": 0,
+      "annual_fee": 0,
+      "fee_waiver_spend": null,
+      "min_income_monthly": 15000,
+      "reward_type": "cashback",
+      "rates": {
+        "base": 0.5,
+        "offline": 1.5,
+        "dining": 1.5,
+        "groceries": 1.5,
+        "fuel": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 0,
+      "lounge": "None",
+      "lounge_value": 0,
+      "key_benefits": [
+        "Lifetime free",
+        "1.5% on offline UPI payments via Kiwi app, no cap",
+        "Scan & pay at any UPI QR"
+      ],
+      "drawbacks": [
+        "RuPay card - UPI only, limited online acceptance",
+        "Low online rewards"
+      ],
+      "best_for": [
+        "upi",
+        "lifetime-free",
+        "beginner"
+      ],
+      "apply_url": "https://gokiwi.in/"
+    },
+    {
+      "id": "amex-platinum-travel",
+      "name": "American Express Platinum Travel",
+      "bank": "American Express",
+      "network": "Amex",
+      "tier": "premium",
+      "joining_fee": 3500,
+      "annual_fee": 5000,
+      "fee_waiver_spend": null,
+      "min_income_monthly": 50000,
+      "reward_type": "points",
+      "rates": {
+        "base": 1.5,
+        "travel": 2.5,
+        "fuel": 0,
+        "utilities": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "8 domestic visits/year",
+      "lounge_value": 3000,
+      "key_benefits": [
+        "1 MR point per Rs 50 + milestone bonus MR points at Rs 1.9L and Rs 7L annual spend",
+        "Points transferable to Marriott, airlines",
+        "Best when you hit the milestones exactly"
+      ],
+      "drawbacks": [
+        "Milestones devalued in Mar/Sep 2026",
+        "Amex acceptance lower at small merchants"
+      ],
+      "best_for": [
+        "travel",
+        "milestones"
+      ],
+      "apply_url": "https://www.americanexpress.com/in/credit-cards/platinum-travel-credit-card/"
+    },
+    {
+      "id": "amex-mrcc",
+      "name": "American Express Membership Rewards Credit Card",
+      "bank": "American Express",
+      "network": "Amex",
+      "tier": "mid",
+      "joining_fee": 1000,
+      "annual_fee": 4500,
+      "fee_waiver_spend": 600000,
+      "min_income_monthly": 50000,
+      "reward_type": "points",
+      "rates": {
+        "base": 2.5,
+        "fuel": 0,
+        "utilities": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "None",
+      "lounge_value": 0,
+      "key_benefits": [
+        "1,000 bonus MR points for 4 transactions of Rs 1,500+ each month",
+        "Redeem via 18/24 Karat Gold Collection for high value",
+        "Great for moderate, regular spenders"
+      ],
+      "drawbacks": [
+        "Amex acceptance",
+        "Value depends on hitting the monthly 4-transaction bonus"
+      ],
+      "best_for": [
+        "points",
+        "all-rounder"
+      ],
+      "apply_url": "https://www.americanexpress.com/in/credit-cards/membership-rewards-card/"
+    },
+    {
+      "id": "amex-smartearn",
+      "name": "American Express SmartEarn",
+      "bank": "American Express",
+      "network": "Amex",
+      "tier": "entry",
+      "joining_fee": 495,
+      "annual_fee": 495,
+      "fee_waiver_spend": 40000,
+      "min_income_monthly": 50000,
+      "reward_type": "points",
+      "rates": {
+        "base": 0.5,
+        "flipkart": 5,
+        "amazon": 2.5,
+        "food_delivery": 2.5,
+        "fuel": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "None",
+      "lounge_value": 0,
+      "key_benefits": [
+        "10X MR on Flipkart and Uber",
+        "5X on Amazon, Swiggy, Zomato and others",
+        "Rs 500 cashback on joining"
+      ],
+      "drawbacks": [
+        "Accelerated points capped monthly",
+        "Amex acceptance"
+      ],
+      "best_for": [
+        "online-shopping",
+        "beginner"
+      ],
+      "apply_url": "https://www.americanexpress.com/in/credit-cards/smart-earn-credit-card/"
+    },
+    {
+      "id": "amex-platinum-charge",
+      "name": "American Express Platinum Card (Charge)",
+      "bank": "American Express",
+      "network": "Amex",
+      "tier": "super-premium",
+      "joining_fee": 70000,
+      "annual_fee": 70000,
+      "fee_waiver_spend": null,
+      "min_income_monthly": 250000,
+      "reward_type": "points",
+      "rates": {
+        "base": 1.25,
+        "travel": 2.5,
+        "fuel": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "Unlimited worldwide incl. Centurion Lounges",
+      "lounge_value": 40000,
+      "key_benefits": [
+        "Marriott, Hilton, Taj elite status",
+        "Large welcome bonus",
+        "Quarterly milestone 15,000 bonus MR on Rs 1.5L spend",
+        "Fine hotels & resorts benefits"
+      ],
+      "drawbacks": [
+        "Rs 70,000 fee",
+        "Value only for frequent luxury travellers"
+      ],
+      "best_for": [
+        "luxury-travel",
+        "lounge",
+        "premium"
+      ],
+      "apply_url": "https://www.americanexpress.com/in/charge-cards/platinum-card/"
+    },
+    {
+      "id": "kotak-811",
+      "name": "Kotak 811 Credit Card",
+      "bank": "Kotak Mahindra Bank",
+      "network": "Visa",
+      "tier": "entry",
+      "joining_fee": 0,
+      "annual_fee": 0,
+      "fee_waiver_spend": null,
+      "min_income_monthly": 0,
+      "reward_type": "points",
+      "rates": {
+        "base": 0.25,
+        "online": 0.5,
+        "fuel": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "None",
+      "lounge_value": 0,
+      "key_benefits": [
+        "Lifetime free",
+        "Can be issued against a Kotak 811 fixed deposit - good for building credit history",
+        "Instant digital issuance via Kotak 811 app",
+        "Fuel surcharge waiver"
+      ],
+      "drawbacks": [
+        "Low reward rate",
+        "Needs a Kotak 811 account"
+      ],
+      "best_for": [
+        "no-credit-history",
+        "student",
+        "lifetime-free",
+        "beginner"
+      ],
+      "apply_url": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards/kotak-811-credit-card.html"
+    },
+    {
+      "id": "idfc-millennia",
+      "name": "IDFC FIRST Millennia",
+      "bank": "IDFC FIRST Bank",
+      "network": "Visa",
+      "tier": "entry",
+      "joining_fee": 0,
+      "annual_fee": 0,
+      "fee_waiver_spend": null,
+      "min_income_monthly": 25000,
+      "reward_type": "points",
+      "rates": {
+        "base": 0.75,
+        "fuel": 0,
+        "utilities": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 0,
+      "lounge": "4 railway lounge visits/quarter",
+      "lounge_value": 500,
+      "key_benefits": [
+        "Lifetime free",
+        "10X points on spends above Rs 20K/month and on birthday",
+        "Zero forex markup (from Sep 2026)",
+        "Points never expire",
+        "Low-interest cash withdrawals"
+      ],
+      "drawbacks": [
+        "Base rate low below Rs 20K/month",
+        "No rewards on utilities/insurance"
+      ],
+      "best_for": [
+        "lifetime-free",
+        "beginner",
+        "international"
+      ],
+      "apply_url": "https://www.idfcfirst.bank.in/credit-card/millennia"
+    },
+    {
+      "id": "idfc-select",
+      "name": "IDFC FIRST Select",
+      "bank": "IDFC FIRST Bank",
+      "network": "Visa",
+      "tier": "mid",
+      "joining_fee": 0,
+      "annual_fee": 0,
+      "fee_waiver_spend": null,
+      "min_income_monthly": 100000,
+      "reward_type": "points",
+      "rates": {
+        "base": 1,
+        "fuel": 0,
+        "utilities": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 0,
+      "lounge": "Domestic + railway lounges on Rs 20K monthly spend",
+      "lounge_value": 2000,
+      "key_benefits": [
+        "Lifetime free",
+        "10X on spends above Rs 20K/month",
+        "Zero forex markup",
+        "Buy-one-get-one movie tickets"
+      ],
+      "drawbacks": [
+        "Lounge visits halved and spend-gated (Apr 2026)"
+      ],
+      "best_for": [
+        "lifetime-free",
+        "international",
+        "all-rounder"
+      ],
+      "apply_url": "https://www.idfcfirst.bank.in/credit-card/select"
+    },
+    {
+      "id": "idfc-wealth",
+      "name": "IDFC FIRST Wealth",
+      "bank": "IDFC FIRST Bank",
+      "network": "Visa",
+      "tier": "premium",
+      "joining_fee": 0,
+      "annual_fee": 0,
+      "fee_waiver_spend": null,
+      "min_income_monthly": 250000,
+      "reward_type": "points",
+      "rates": {
+        "base": 1.25,
+        "fuel": 0,
+        "utilities": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 0,
+      "lounge": "Domestic + international lounges on Rs 20K monthly spend",
+      "lounge_value": 4000,
+      "key_benefits": [
+        "Lifetime free premium card",
+        "10X on spends above Rs 20K/month",
+        "Zero forex markup",
+        "Golf, spa and BOGO movies"
+      ],
+      "drawbacks": [
+        "High income requirement",
+        "Lounge spend-gated"
+      ],
+      "best_for": [
+        "lifetime-free",
+        "international",
+        "lounge"
+      ],
+      "apply_url": "https://www.idfcfirst.bank.in/credit-card/wealth"
+    },
+    {
+      "id": "idfc-wow",
+      "name": "IDFC FIRST WOW! (FD-backed)",
+      "bank": "IDFC FIRST Bank",
+      "network": "Visa",
+      "tier": "secured",
+      "joining_fee": 0,
+      "annual_fee": 0,
+      "fee_waiver_spend": null,
+      "min_income_monthly": 0,
+      "reward_type": "points",
+      "rates": {
+        "base": 0.5,
+        "fuel": 0,
+        "utilities": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 0,
+      "lounge": "None",
+      "lounge_value": 0,
+      "key_benefits": [
+        "Against a Fixed Deposit - no income proof or credit history needed",
+        "Lifetime free",
+        "Zero forex markup",
+        "Builds your CIBIL score"
+      ],
+      "drawbacks": [
+        "Credit limit tied to FD amount",
+        "Low rewards"
+      ],
+      "best_for": [
+        "no-credit-history",
+        "student",
+        "lifetime-free",
+        "international"
+      ],
+      "apply_url": "https://www.idfcfirst.bank.in/credit-card/wow"
+    },
+    {
+      "id": "au-lit",
+      "name": "AU Bank LIT",
+      "bank": "AU Small Finance Bank",
+      "network": "Visa",
+      "tier": "entry",
+      "joining_fee": 0,
+      "annual_fee": 0,
+      "fee_waiver_spend": null,
+      "min_income_monthly": 20000,
+      "reward_type": "customisable",
+      "rates": {
+        "base": 0.5,
+        "online": 1,
+        "fuel": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "Optional paid feature",
+      "lounge_value": 0,
+      "key_benefits": [
+        "Lifetime free",
+        "Pay only for the features you choose (cashback, lounge, memberships)",
+        "Change features anytime via app"
+      ],
+      "drawbacks": [
+        "Features cost extra",
+        "Low default rewards"
+      ],
+      "best_for": [
+        "lifetime-free",
+        "beginner",
+        "flexible"
+      ],
+      "apply_url": "https://www.au.bank.in/personal-banking/credit-cards/lit-credit-card"
+    },
+    {
+      "id": "indusind-tiger",
+      "name": "IndusInd Bank Tiger",
+      "bank": "IndusInd Bank",
+      "network": "Visa",
+      "tier": "entry",
+      "joining_fee": 0,
+      "annual_fee": 0,
+      "fee_waiver_spend": null,
+      "min_income_monthly": 25000,
+      "reward_type": "points",
+      "rates": {
+        "base": 1,
+        "fuel": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 1.5,
+      "lounge": "8 domestic + 2 international per year, no spend criteria",
+      "lounge_value": 4000,
+      "key_benefits": [
+        "Lifetime free",
+        "Lounges without spend requirement",
+        "Reward rate scales 1 -> 6 points/Rs 100 with annual spend",
+        "1 point = 1 Air India mile (from Jun 2026)"
+      ],
+      "drawbacks": [
+        "Low rate at low spends"
+      ],
+      "best_for": [
+        "lifetime-free",
+        "lounge",
+        "travel"
+      ],
+      "apply_url": "https://www.indusind.bank.in/in/en/personal/cards/credit-card/tiger-credit-card.html"
+    },
+    {
+      "id": "indusind-eazydiner",
+      "name": "EazyDiner IndusInd Bank",
+      "bank": "IndusInd Bank",
+      "network": "Mastercard",
+      "tier": "mid",
+      "joining_fee": 1999,
+      "annual_fee": 1999,
+      "fee_waiver_spend": null,
+      "min_income_monthly": 30000,
+      "reward_type": "points",
+      "rates": {
+        "base": 0.75,
+        "dining": 10,
+        "fuel": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "None",
+      "lounge_value": 2500,
+      "key_benefits": [
+        "Complimentary EazyDiner Prime membership",
+        "Extra 25% off (up to Rs 1,000) on EazyDiner restaurant bookings",
+        "2,000 bonus EazyPoints on joining"
+      ],
+      "drawbacks": [
+        "Value only if you dine out often"
+      ],
+      "best_for": [
+        "dining"
+      ],
+      "apply_url": "https://www.indusind.bank.in/in/en/personal/cards/credit-card/eazydiner-credit-card.html"
+    },
+    {
+      "id": "bob-eterna",
+      "name": "BOBCARD Eterna",
+      "bank": "Bank of Baroda (BOBCARD)",
+      "network": "Visa / Mastercard",
+      "tier": "premium",
+      "joining_fee": 0,
+      "annual_fee": 2499,
+      "fee_waiver_spend": 250000,
+      "min_income_monthly": 60000,
+      "reward_type": "points",
+      "rates": {
+        "base": 0.75,
+        "travel": 3.75,
+        "dining": 3.75,
+        "online": 3.75,
+        "amazon": 3.75,
+        "flipkart": 3.75,
+        "food_delivery": 3.75,
+        "fuel": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 2,
+      "lounge": "Domestic + international lounge visits",
+      "lounge_value": 3000,
+      "key_benefits": [
+        "15 RP per Rs 100 on travel, dining, online shopping (~3.75% as cashback)",
+        "First year free (from Sep 2026)",
+        "FITPASS PRO membership on Rs 10K spend in 30 days"
+      ],
+      "drawbacks": [
+        "Accelerated points capped monthly",
+        "Rs 2,499 from year 2 unless Rs 2.5L spend"
+      ],
+      "best_for": [
+        "online-shopping",
+        "dining",
+        "travel",
+        "all-rounder"
+      ],
+      "apply_url": "https://www.bobcard.co.in/credit-card-types/eterna"
+    },
+    {
+      "id": "yes-marquee",
+      "name": "YES Bank Marquee",
+      "bank": "YES Bank",
+      "network": "Visa",
+      "tier": "super-premium",
+      "joining_fee": 9999,
+      "annual_fee": 4999,
+      "fee_waiver_spend": 1000000,
+      "min_income_monthly": 150000,
+      "reward_type": "points",
+      "rates": {
+        "base": 2.25,
+        "online": 4.5,
+        "amazon": 4.5,
+        "flipkart": 4.5,
+        "food_delivery": 4.5,
+        "travel": 4.5,
+        "fuel": 0,
+        "utilities": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 1,
+      "lounge": "Unlimited domestic + international",
+      "lounge_value": 12000,
+      "key_benefits": [
+        "36 RP per Rs 200 online (~4.5% redeemed for travel)",
+        "18 RP per Rs 200 offline",
+        "Low forex markup"
+      ],
+      "drawbacks": [
+        "Best value only when redeeming for flights/hotels",
+        "YES Bank fee changes (Jun 2026)"
+      ],
+      "best_for": [
+        "online-shopping",
+        "high-spender",
+        "travel",
+        "lounge"
+      ],
+      "apply_url": "https://www.yes.bank.in/personal-banking/yes-individual/cards/credit-cards/marquee-credit-card"
+    },
+    {
+      "id": "sc-ultimate",
+      "name": "Standard Chartered Ultimate",
+      "bank": "Standard Chartered",
+      "network": "Visa",
+      "tier": "premium",
+      "joining_fee": 5000,
+      "annual_fee": 5000,
+      "fee_waiver_spend": null,
+      "min_income_monthly": 150000,
+      "reward_type": "points",
+      "rates": {
+        "base": 3.3,
+        "fuel": 0,
+        "utilities": 1
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 2,
+      "lounge": "Domestic + Priority Pass international",
+      "lounge_value": 6000,
+      "key_benefits": [
+        "5 RP per Rs 150 (~3.3%) on almost all spends",
+        "5% cashback on duty-free spends",
+        "Golf"
+      ],
+      "drawbacks": [
+        "Limited redemption catalogue (vouchers)",
+        "Fee not waivable"
+      ],
+      "best_for": [
+        "all-rounder",
+        "high-spender"
+      ],
+      "apply_url": "https://www.sc.bank.in/credit-cards/ultimate-card/"
+    },
+    {
+      "id": "sc-smart",
+      "name": "Standard Chartered Smart",
+      "bank": "Standard Chartered",
+      "network": "Visa",
+      "tier": "entry",
+      "joining_fee": 499,
+      "annual_fee": 499,
+      "fee_waiver_spend": 120000,
+      "min_income_monthly": 25000,
+      "reward_type": "cashback",
+      "rates": {
+        "base": 1,
+        "online": 2,
+        "amazon": 2,
+        "flipkart": 2,
+        "food_delivery": 2,
+        "travel": 2,
+        "fuel": 0
+      },
+      "monthly_reward_cap": 1500,
+      "forex_markup": 3.5,
+      "lounge": "None",
+      "lounge_value": 0,
+      "key_benefits": [
+        "2% cashback on all online spends",
+        "1% on offline",
+        "Low-cost EMI options"
+      ],
+      "drawbacks": [
+        "Online cashback capped Rs 1,000/month"
+      ],
+      "best_for": [
+        "online-shopping",
+        "cashback",
+        "simple"
+      ],
+      "apply_url": "https://www.sc.bank.in/credit-cards/smart-credit-card/"
+    },
+    {
+      "id": "hsbc-liveplus",
+      "name": "HSBC Live+",
+      "bank": "HSBC India",
+      "network": "Visa",
+      "tier": "mid",
+      "joining_fee": 999,
+      "annual_fee": 999,
+      "fee_waiver_spend": 200000,
+      "min_income_monthly": 40000,
+      "reward_type": "cashback",
+      "rates": {
+        "base": 1.5,
+        "dining": 10,
+        "food_delivery": 10,
+        "groceries": 10,
+        "utilities": 10,
+        "online": 10,
+        "amazon": 10,
+        "flipkart": 10,
+        "fuel": 0
+      },
+      "monthly_reward_cap": 1500,
+      "forex_markup": 3.5,
+      "lounge": "1 international visit/year (from Jul 2026)",
+      "lounge_value": 1500,
+      "key_benefits": [
+        "10% cashback on dining, food delivery, groceries, shopping & utilities (cap Rs 1,200/month)",
+        "1.5% unlimited on everything else",
+        "Auto-credited cashback"
+      ],
+      "drawbacks": [
+        "Available only in select Indian cities",
+        "10% cap hits at Rs 12K/month"
+      ],
+      "best_for": [
+        "dining",
+        "food-delivery",
+        "groceries",
+        "cashback",
+        "all-rounder"
+      ],
+      "apply_url": "https://www.hsbc.bank.in/credit-cards/products/live-plus/"
+    },
+    {
+      "id": "hsbc-travelone",
+      "name": "HSBC TravelOne",
+      "bank": "HSBC India",
+      "network": "Mastercard",
+      "tier": "premium",
+      "joining_fee": 4999,
+      "annual_fee": 4999,
+      "fee_waiver_spend": 800000,
+      "min_income_monthly": 100000,
+      "reward_type": "miles",
+      "rates": {
+        "base": 2,
+        "travel": 4,
+        "fuel": 0,
+        "intl": 4
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 3.5,
+      "lounge": "6 domestic + 4 international per year",
+      "lounge_value": 4000,
+      "key_benefits": [
+        "4 RP per Rs 100 on flights, travel & forex spends",
+        "2 RP per Rs 100 elsewhere",
+        "1:1 transfer to many airline/hotel partners incl. Accor"
+      ],
+      "drawbacks": [
+        "Airport transfers discontinued (Jul 2026)",
+        "Select cities only"
+      ],
+      "best_for": [
+        "travel",
+        "miles",
+        "international"
+      ],
+      "apply_url": "https://www.hsbc.bank.in/credit-cards/products/travelone/"
+    },
+    {
+      "id": "federal-scapia",
+      "name": "Scapia Federal Bank",
+      "bank": "Federal Bank x Scapia",
+      "network": "Visa / RuPay",
+      "tier": "entry",
+      "joining_fee": 0,
+      "annual_fee": 0,
+      "fee_waiver_spend": null,
+      "min_income_monthly": 25000,
+      "reward_type": "travel coins",
+      "rates": {
+        "base": 2,
+        "travel": 4,
+        "fuel": 0,
+        "utilities": 0,
+        "intl": 2
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 0,
+      "lounge": "Unlimited domestic lounges on Rs 20K monthly spend",
+      "lounge_value": 4000,
+      "key_benefits": [
+        "Lifetime free",
+        "Zero forex markup",
+        "10% Scapia coins (~2%) on all spends, 20% on travel booked via Scapia",
+        "Coins redeemable for flights & hotels"
+      ],
+      "drawbacks": [
+        "Coins usable only for travel on Scapia app",
+        "No rewards on utilities & insurance (Feb 2026)"
+      ],
+      "best_for": [
+        "travel",
+        "international",
+        "lifetime-free",
+        "lounge"
+      ],
+      "apply_url": "https://www.scapia.cards/"
+    },
+    {
+      "id": "onecard",
+      "name": "OneCard Metal",
+      "bank": "OneCard (multiple partner banks)",
+      "network": "Visa",
+      "tier": "entry",
+      "joining_fee": 0,
+      "annual_fee": 0,
+      "fee_waiver_spend": null,
+      "min_income_monthly": 15000,
+      "reward_type": "points",
+      "rates": {
+        "base": 0.6,
+        "fuel": 0
+      },
+      "monthly_reward_cap": null,
+      "forex_markup": 1,
+      "lounge": "None",
+      "lounge_value": 0,
+      "key_benefits": [
+        "Lifetime free metal card",
+        "5X rewards on your top 2 spend categories each month",
+        "Excellent app, instant EMI conversion",
+        "Low 1% forex markup"
+      ],
+      "drawbacks": [
+        "Low base reward rate"
+      ],
+      "best_for": [
+        "lifetime-free",
+        "beginner",
+        "international"
+      ],
+      "apply_url": "https://www.getonecard.app/"
+    }
+  ]
+}
