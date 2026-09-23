@@ -307,5 +307,9 @@ async function share() {
   try { if (navigator.share) await navigator.share(data); else { await navigator.clipboard.writeText(data.url); alert("Link copied!"); } } catch {}
 }
 </script>
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
