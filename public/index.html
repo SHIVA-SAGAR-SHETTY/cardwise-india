@@ -12,6 +12,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://cardwise-india-delta.vercel.app/">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8084037494513258" crossorigin="anonymous"></script>
 <style>
   :root {
     --bg: #f7f8f7; --surface: #ffffff; --surface-2: #f0f3f2; --text: #14201e; --muted: #5b6b68;
@@ -28,7 +30,14 @@
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 Inter, system-ui, -apple-system, "Segoe UI", sans-serif; }
   .wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
-  header { padding: 20px 0; display: flex; align-items: center; gap: 10px; font-weight: 700; }
+  header { padding: 20px 0; display: flex; align-items: center; justify-content: space-between; gap: 10px; font-weight: 700; flex-wrap: wrap; }
+  header .brand { display: flex; align-items: center; gap: 10px; }
+  header nav { display: flex; gap: 16px; font-size: 14px; }
+  header nav a { color: var(--muted); text-decoration: none; font-weight: 500; }
+  .guidelinks { margin: 8px 0 24px; }
+  .guidelinks h2 { margin-bottom: 10px; }
+  .guidelinks ul { padding-left: 18px; margin: 0; font-size: 15px; }
+  .guidelinks a, footer a { color: var(--accent); }
   header .logo { width: 30px; height: 20px; border-radius: 4px; background: var(--accent); position: relative; }
   header .logo::after { content: ""; position: absolute; left: 0; right: 0; top: 5px; height: 4px; background: rgba(0,0,0,.35); }
   .hero { padding: 28px 0 8px; }
@@ -89,7 +98,7 @@
 </head>
 <body>
 <div class="wrap">
-  <header><span class="logo" aria-hidden="true"></span> CardWise India</header>
+  <header><span class="brand"><span class="logo" aria-hidden="true"></span> CardWise India</span><nav><a href="/guides">Guides</a><a href="/about">About</a></nav></header>
 
   <section class="hero" id="hero">
     <h1>Which credit card should you get?</h1>
@@ -178,8 +187,22 @@
     <div><b>3. AI adviser</b>Works out what each card pays you back and explains its top 3 picks.</div>
   </section>
 
+  <section class="guidelinks">
+    <h2>Credit card guides</h2>
+    <ul>
+      <li><a href="/guides/best-credit-card-for-swiggy-zomato">Best credit cards for Swiggy &amp; Zomato</a></li>
+      <li><a href="/guides/lifetime-free-credit-cards-india">Best lifetime-free credit cards</a></li>
+      <li><a href="/guides/best-cashback-credit-cards-india">Best cashback credit cards</a></li>
+      <li><a href="/guides/best-credit-cards-online-shopping-amazon-flipkart">Best cards for Amazon &amp; Flipkart</a></li>
+      <li><a href="/guides/best-fuel-credit-cards-india">Best fuel credit cards</a></li>
+      <li><a href="/guides/best-travel-credit-cards-lounge-access">Best travel cards with lounge access</a></li>
+      <li><a href="/guides/first-credit-card-no-credit-history">Your first card with no credit history</a></li>
+      <li><a href="/guides/zero-forex-credit-cards-international-travel">Best zero forex markup cards</a></li>
+    </ul>
+  </section>
+
   <footer>
-    CardWise gives general information, not financial advice. Card terms change often, so always check the fees and terms on the bank's website before you apply. We don't store your answers. Card data last updated: <span id="updated">Sep 2026</span>.
+    CardWise gives general information, not financial advice. Card terms change often, so always check the fees and terms on the bank's website before you apply. We don't store your answers. This site shows ads from Google. See our <a href="/privacy">privacy policy</a>. Card data last updated: <span id="updated">Sep 2026</span>.
   </footer>
 </div>
 

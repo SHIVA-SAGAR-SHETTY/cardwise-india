@@ -25,9 +25,11 @@ http.createServer(async (req, res) => {
     return handler(req, res);
   }
   try {
-    const file = url.pathname === "/" ? "index.html" : url.pathname.slice(1);
+    let file = url.pathname === "/" ? "index.html" : url.pathname.slice(1).replace(/\/$/, "");
+    if (!/\.[a-z]+$/.test(file)) file = existsSync(new URL(`./public/${file}.html`, import.meta.url)) ? `${file}.html` : `${file}/index.html`;
     const data = await readFile(new URL(`./public/${file}`, import.meta.url));
-    res.setHeader("Content-Type", file.endsWith(".html") ? "text/html" : "application/octet-stream");
+    const types = { html: "text/html; charset=utf-8", css: "text/css", txt: "text/plain", xml: "application/xml" };
+    res.setHeader("Content-Type", types[file.split(".").pop()] || "application/octet-stream");
     res.end(data);
   } catch { res.statusCode = 404; res.end("Not found"); }
 }).listen(PORT, () => console.log(`CardWise running at http://localhost:${PORT}`));
